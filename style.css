@@ -8,40 +8,159 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    height: 100vh;
     background-color: blueviolet;
     display: flex;
-    justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
+}
+
+.left-side {
+    border:3px solid black;
+    width: 900px;
+    height: 850px;
+    margin-right: 5rem;
 }
 
 .menu-board {
     /* padding-top: .5rem;
     padding-bottom: .5rem; */
     background-color: aquamarine;
-    width: 450px;
-    height:65%;
+    width: 893px;
+    height:73%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
+    /* flex-direction: column; */
+    justify-content: space-between;
     align-items: center;
 }
 
-.menu-board div {
-    /* margin: .5rem; */
-    width: 30%;
+.menu-board ul{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+    background-image: url(./아이스아메리카노.jpg);
+    background-size: cover;
+    border-bottom: 1px solid black;
+    margin: 0.01rem;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.menu-board li {
+    text-indent: -9999%;    
+    list-style: none;
+    background-image: url(./아이스아메리카노.jpg);
+    background-size: cover;
+    /* background-image: url(./images/211001_빅아이스아메리카노-1280.jpg);
+    background-size: cover; */
+    width: 33%;
+    height: 33%;
+    /* opacity: 0; */
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-board li:active {
+    
+    opacity: .7;
+    background-image:url(./선택체크.jpg);
+    background-size: cover;
+}
+
+.menu-check {
+    position: relative;
+    display: flex;
+    margin-top: 2%;
+    width:893px;
+    height:25%;
+    background-color: #fff;
+    justify-content: center;
+    flex-direction: 
+}
+
+.check-list {
+    
+    width: 893px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.check-list div{
+    border-top: 1px solid black;
+    width:90%;
+    height: 100%;
+    background-color: coral;
+}
+
+.credit {
+    width:9.7%;
     height: 30%;
-    display: inline-block;
-    background-color: white;
+    position: absolute;
+    right: .1rem;
+    bottom: .1rem;
+}
+
+.right-side {
+    /* min-width:550px; */
+    border:3px solid black;
+    width: 550px;
+    height: 850px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
+.wating-board {
+    background-color: darkkhaki;
+    height: 20%;
+    width: 100%;
+    
+}
 
-.menu-check {
-    margin-top: 5%;
-    width:450px;
-    height:30%;
-    background-color: #fff;
+.customer-list{
+    border-top:1px solid black;
+    width: 100%;
+    height: 100%;
+    background-color: dodgerblue;
+}
+
+.customer-list div{
+    border-top:1px solid black;
+    height: 10%;
+}
+
+.wating-board:hover {
+    cursor:pointer;
+    background-color: red;
+        
+}
+
+.wating-board:active {
+    
+    background-color: aqua;
+}
+
+@media (max-width:1700px) {
+    .total-menu {
+        background-color:darkgreen;
+    }
+
+} 
+
+@media (max-width:1300px) {
+    .total-menu {
+        background-color: orange;
+    }
+
 }
